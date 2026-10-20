@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExamBhai Speed Sprint Extensions — Official Browser Tools for CAT, JEE, NEET, Bank PO & SSC</title>
+  <meta name="description" content="Official browser extension companion tools by ExamBhai. High-adrenaline 60-second speed math drills, active recall formula flashcards, and authentic CBT mock tests for competitive exam aspirants.">
+  <meta name="keywords" content="ExamBhai, speed math extension, CAT quant drills, JEE formula flashcards, NEET biology revision, Bank PO missing number series, SSC CGL static GK, UPSC CDS, AFCAT, NDA">
+  <link rel="canonical" href="https://www.exambhai.com">
+  <meta property="og:title" content="ExamBhai Speed Sprint Extensions — Official Browser Tools">
+  <meta property="og:description" content="Master speed math, formulas, and active recall in 60s drills before deep mock tests on ExamBhai.">
+  <meta property="og:url" content="https://www.exambhai.com">
+  <meta property="og:type" content="website">
+
+  <!-- Schema.org Educational Software Application Metadata -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "ExamBhai Speed Sprint Extension Suite",
+    "operatingSystem": "ChromeOS, Windows, macOS, Linux",
+    "applicationCategory": "EducationalApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "publisher": {
+      "@type": "EducationalOrganization",
+      "name": "ExamBhai",
+      "url": "https://www.exambhai.com"
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #090D16;
+      --card-bg: #111827;
+      --card-border: #1F2937;
+      --primary: #F97316;
+      --primary-hover: #EA580C;
+      --text: #F9FAFB;
+      --text-muted: #9CA3AF;
+      --accent-blue: #3B82F6;
+      --accent-green: #10B981;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(180deg, #111827 0%, #090D16 100%);
+      border-bottom: 1px solid var(--card-border);
+      padding: 3rem 1.5rem 2rem;
+      text-align: center;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(249, 115, 22, 0.15);
+      color: var(--primary);
+      border: 1px solid rgba(249, 115, 22, 0.3);
+      padding: 0.35rem 0.85rem;
+      border-radius: 9999px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.025em;
+    }
+    h1 span { color: var(--primary); }
+    .subtitle {
+      max-width: 680px;
+      margin: 0 auto 1.5rem;
+      color: var(--text-muted);
+      font-size: 1.15rem;
+    }
+    .hero-cta {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      font-size: 0.95rem;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+    }
+    .btn-primary:hover { background: var(--primary-hover); transform: translateY(-1px); }
+    .btn-secondary {
+      background: #1F2937;
+      color: #fff;
+      border: 1px solid #374151;
+    }
+    .btn-secondary:hover { background: #374151; }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+    .section-title {
+      font-size: 1.75rem;
+      font-weight: 800;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.75rem;
+      margin-bottom: 4rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 14px;
+      overflow: hidden;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: #374151;
+    }
+    .card-img-wrap {
+      width: 100%;
+      height: 180px;
+      background: #0B0F19;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 1px solid var(--card-border);
+    }
+    .card-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .card-body {
+      padding: 1.25rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .card-tag {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.35rem;
+    }
+    .card-title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #fff;
+    }
+    .card-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+      flex: 1;
+    }
+    .card-link {
+      display: inline-block;
+      text-align: center;
+      background: #1E293B;
+      color: #F8FAFC;
+      border: 1px solid #334155;
+      padding: 0.65rem 1rem;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+    .card-link:hover {
+      background: var(--primary);
+      border-color: var(--primary);
+    }
+
+    /* Authority Signals Section */
+    .authority-box {
+      background: linear-gradient(180deg, #111827 0%, #161E2E 100%);
+      border: 1px solid #1F2937;
+      border-radius: 16px;
+      padding: 2.5rem;
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    .authority-box h2 {
+      font-size: 1.75rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+    .authority-box p {
+      max-width: 700px;
+      margin: 0 auto 1.5rem;
+      color: var(--text-muted);
+    }
+    .authority-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .authority-links a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.95rem;
+      border-bottom: 1px solid rgba(249, 115, 22, 0.4);
+      padding-bottom: 2px;
+    }
+    .authority-links a:hover {
+      color: #fff;
+      border-bottom-color: #fff;
+    }
+
+    footer {
+      border-top: 1px solid var(--card-border);
+      padding: 2.5rem 1.5rem;
+      text-align: center;
+      color: #6B7280;
+      font-size: 0.85rem;
+    }
+    footer a { color: var(--text-muted); text-decoration: none; }
+    footer a:hover { color: #fff; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="badge">Official Distribution Hub</div>
+    <h1>Exam<span>Bhai</span> Speed Sprint Suite</h1>
+    <p class="subtitle">High-adrenaline 60-second mental math sprints, active recall formula flashcards, and full-length CBT mock prep tools for India's toughest exams.</p>
+    <div class="hero-cta">
+      <a href="https://www.exambhai.com" class="btn btn-primary" rel="dofollow">🚀 Visit ExamBhai.com</a>
+      <a href="https://www.exambhai.com/pricing" class="btn btn-secondary" rel="dofollow">💎 Explore Test Passes</a>
+    </div>
+  </header>
+
+  <div class="container">
+    <h2 class="section-title">Select Your Competitive Examination Tool</h2>
+
+    <div class="grid">
+      <!-- CAT -->
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="assets/cat-promo.png" alt="IIM CAT Speed Math Extension">
+        </div>
+        <div class="card-body">
+          <span class="card-tag">MBA Entrance</span>
+          <h3 class="card-title">IIM CAT Quant Speed Math</h3>
+          <p class="card-desc">Vedic percentage conversions, mental arithmetic drills, and formula flashcards with Bhai the Billa.</p>
+          <a href="https://www.exambhai.com/practice/free/iim-cat-2026" class="card-link" rel="dofollow">👉 Take Free CAT Mock Test</a>
+        </div>
+      </div>
+
+      <!-- JEE -->
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="assets/jee-promo.png" alt="IIT JEE Formula and Physics Extension">
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Engineering</span>
+          <h3 class="card-title">IIT JEE Formula & Physics</h3>
+          <p class="card-desc">Kinematics equations, rotational dynamics, calculus shortcuts & organic reaction reagents with Newton Chacha.</p>
+          <a href="https://www.exambhai.com/practice/free/iit-jee-mains-2027-mock" class="card-link" rel="dofollow">👉 Take Free JEE Mains Mock</a>
+        </div>
+      </div>
+
+      <!-- NEET -->
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="assets/neet-promo.png" alt="NEET UG Biology Flashcards Extension">
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Medical Entrance</span>
+          <h3 class="card-title">NEET UG Biology Flashcards</h3>
+          <p class="card-desc">Line-by-line NCERT botany, zoology, genetics ratios, and human physiology drills with Dr. Chintu.</p>
+          <a href="https://www.exambhai.com/practice/free/neet-2027-mock" class="card-link" rel="dofollow">👉 Take Free NEET 720 Mock</a>
+        </div>
+      </div>
+
+      <!-- IBPS PO -->
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="assets/ibps-po-promo.png" alt="IBPS PO Bank Math Extension">
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Banking & Insurance</span>
+          <h3 class="card-title">IBPS PO / Bank PO Math</h3>
+          <p class="card-desc">Rapid missing number series, BODMAS approximations & quadratic comparisons with Babu Gopinath.</p>
+          <a href="https://www.exambhai.com/practice/free/ibps-po-probationary-officer-prelims-mock" class="card-link" rel="dofollow">👉 Take Free IBPS PO Mock</a>
+        </div>
+      </div>
+
+      <!-- SSC CGL -->
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="assets/ssc-cgl-promo.png" alt="SSC CGL Math and GK Extension">
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Government Staff</span>
+          <h3 class="card-title">SSC CGL Math & GK Tricks</h3>
+          <p class="card-desc">Trigonometry substitutions, circle geometry theorems, static GK and Indian polity with Inspector Pandey.</p>
+          <a href="https://www.exambhai.com/practice/free/ssc-cgl-tier-1-mock" class="card-link" rel="dofollow">👉 Take Free SSC CGL Mock</a>
+        </div>
+      </div>
+
+      <!-- UPSC CDS -->
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="assets/cds-promo.png" alt="UPSC CDS Elementary Math Extension">
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Defence Forces</span>
+          <h3 class="card-title">UPSC CDS Math & GK Sprint</h3>
+          <p class="card-desc">Elementary mathematics shortcuts, military history, defense commands and rank progression with Major Thapa.</p>
+          <a href="https://www.exambhai.com/practice/free/cds-2027-mock" class="card-link" rel="dofollow">👉 Take Free CDS Mock Test</a>
+        </div>
+      </div>
+
+      <!-- AFCAT -->
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="assets/afcat-promo.png" alt="AFCAT Air Force Speed Math Extension">
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Air Force</span>
+          <h3 class="card-title">AFCAT Air Force Speed Math</h3>
+          <p class="card-desc">Flight aptitude, spatial reasoning analogies, aircraft specifications, and speed-distance drills with Cadet Baaz.</p>
+          <a href="https://www.exambhai.com/practice/free/afcat-mock" class="card-link" rel="dofollow">👉 Take Free AFCAT Mock Test</a>
+        </div>
+      </div>
+
+      <!-- UPSC NDA -->
+      <div class="card">
+        <div class="card-img-wrap">
+          <img src="assets/nda-promo.png" alt="UPSC NDA Math and GAT Extension">
+        </div>
+        <div class="card-body">
+          <span class="card-tag">Cadet Academy</span>
+          <h3 class="card-title">UPSC NDA Math & GAT Sprint</h3>
+          <p class="card-desc">Powers of iota, trigonometry half-angles, calculus chain rules, and GAT science drills with Cadet Sheru.</p>
+          <a href="https://www.exambhai.com/practice/free/nda-mock" class="card-link" rel="dofollow">👉 Take Free NDA Mock Test</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Authority Hub -->
+    <div class="authority-box">
+      <h2>Authentic CBT Mock Tests & Percentile Analytics</h2>
+      <p>Benchmark your preparation against authentic NTA, IIM, and TCS CBT test patterns with detailed step-by-step solutions and AI-driven sectional recommendations.</p>
+      <div class="authority-links">
+        <a href="https://www.exambhai.com" rel="dofollow">🌐 Official Website</a>
+        <a href="https://www.exambhai.com/pricing" rel="dofollow">💎 Exam Passes & Pricing</a>
+        <a href="https://www.exambhai.com/contact" rel="dofollow">✉️ Support & Feedback</a>
+        <a href="https://www.exambhai.com/privacy-policy" rel="dofollow">🛡️ Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 <a href="https://www.exambhai.com" rel="dofollow">ExamBhai</a>. All rights reserved. 100% Client-Side Privacy Safe Educational Companion Tools.</p>
+  </footer>
+
+</body>
+</html>
