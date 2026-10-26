@@ -6,11 +6,23 @@ The ExamBhai Speed Sprint extension suite is engineered to be 100% client-side, 
 
 ## 🌐 Official Store Links
 
-Once the ongoing store reviews complete, install with one click from your preferred browser store:
+Install with one click from your preferred browser store:
 
-* **Google Chrome:** [Chrome Web Store — ExamBhai](https://chromewebstore.google.com/search/ExamBhai)
-* **Microsoft Edge:** [Microsoft Edge Add-ons — ExamBhai](https://microsoftedge.microsoft.com/addons/search/ExamBhai)
-* **Opera Browser:** [Opera Add-ons — ExamBhai](https://addons.opera.com/search/?q=ExamBhai)
+### 🌊 Microsoft Edge Add-ons (All 8 Approved & Live!)
+* **IIT JEE Formula & Physics:** [Install from Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/dipakieeenfapfdijkalgpchlfdeejjh)
+* **IIM CAT Quant Speed Math:** [Install from Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/lmlmcebllkhehobmdddflppoogjnbbnf)
+* **NEET UG Biology Flashcards:** [Install from Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/magglfljfmoedhopkfcdljiecgilocno)
+* **IBPS PO / Bank PO Math:** [Install from Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/pkcohaephflbinpipcbmocobhciiechi)
+* **SSC CGL Math & GK Tricks:** [Install from Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/fdihlgimnekbchdeakaohlpakefgnlfj)
+* **UPSC CDS Math & GK Sprint:** [Install from Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/feigodloalonnpnmbmkaenkbchgbiajj)
+* **AFCAT Air Force Speed Math:** [Install from Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/focadnckpegiienolmafpcohfajibbcp)
+* **UPSC NDA Math & GAT Sprint:** [Install from Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/fibdlhnjecbphnggdghancnddoiaeecl)
+
+### 🚀 Google Chrome Web Store
+* **Chrome Web Store Directory:** [Search ExamBhai on Chrome Web Store](https://chromewebstore.google.com/search/ExamBhai)
+
+### 🔴 Opera Add-ons
+* **Opera Add-ons Directory:** [Search ExamBhai on Opera Add-ons](https://addons.opera.com/search/?q=ExamBhai)
 
 ---
 
